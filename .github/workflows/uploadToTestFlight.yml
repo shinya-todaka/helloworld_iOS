@@ -13,7 +13,7 @@ env:
 jobs:
   build:
 
-    runs-on: mocos-latest
+    runs-on: mocOS-latest
 
     steps:
     - uses: actions/checkout@v2
