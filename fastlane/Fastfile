@@ -26,7 +26,9 @@ platform :ios do
       readonly: is_ci
     )
    
-    increment_build_number(xcodeproj: "helloworld_iOS.xcodeproj")
+    increment_version_number
+    increment_build_number
+    
 
     build_app(
       scheme: "helloworld_iOS",
