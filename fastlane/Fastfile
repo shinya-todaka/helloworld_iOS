@@ -48,8 +48,13 @@ platform :ios do
         "beta",
          get_version_number(xcodeproj: "helloworld_iOS.xcodeproj", target: "helloworld_iOS"),
          get_build_number(xcodeproj: "helloworld_iOS.xcodeproj"),
+         "TestFlight"
        )
      )
+
+    commit_version_bump
+    push_to_git_remote
+
   end
   
   def slack_message(type, version_number, build_number, platform)
