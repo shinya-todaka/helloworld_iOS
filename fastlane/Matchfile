@@ -1,4 +1,4 @@
-git_url("git@github.com:shinya-todaka/helloworld_iOS_certificates.git")
+git_url("https://github.com/shinya-todaka/helloworld_iOS_certificates.git")
 
 storage_mode("git")
 
