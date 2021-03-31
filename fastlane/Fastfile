@@ -51,4 +51,9 @@ platform :ios do
        )
      )
   end
+  
+  def slack_message(type, version_number, build_number, platform)
+    "[#{type.upcase}] uploaded v#{version_number} (#{build_number}) of the Kickstarter iOS app to #{platform}"
+  end
+
 end
