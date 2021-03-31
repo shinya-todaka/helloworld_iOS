@@ -41,5 +41,14 @@ platform :ios do
       api_key: api_key,
       skip_waiting_for_build_processing: true
     )
+    
+    slack(
+      slack_url: ENV["SLACK_WEBHOOK_URL"],
+      message: slack_message(
+        "beta",
+         get_version_number(xcodeproj: "helloworld-iOS.xcodeproj", target: "helloworld-iOS"),
+         get_build_number(xcodeproj: "helloworld-iOS.xcodeproj"),
+       )
+     )
   end
 end
