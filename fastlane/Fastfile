@@ -46,8 +46,8 @@ platform :ios do
       slack_url: ENV["SLACK_WEBHOOK_URL"],
       message: slack_message(
         "beta",
-         get_version_number(xcodeproj: "helloworld-iOS.xcodeproj", target: "helloworld-iOS"),
-         get_build_number(xcodeproj: "helloworld-iOS.xcodeproj"),
+         get_version_number(xcodeproj: "helloworld_iOS.xcodeproj", target: "helloworld-iOS"),
+         get_build_number(xcodeproj: "helloworld_iOS.xcodeproj"),
        )
      )
   end
